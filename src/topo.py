@@ -18,7 +18,7 @@ class Topology(Topo):
         # Add links into topology
         self.addLink(s1, h1, port1=1, port2=1)
         self.addLink(s3, h2, port1=1, port2=1)
-        self.addLink(s1, s3, port1=3, port2=2, bw=10, delay='5ms', loss=2)
+        self.addLink(s1, s3, port1=3, port2=2, bw=3, delay='10ms', loss=3)
         self.addLink(s1, s2, port1=2, port2=1, bw=30, delay='2ms', loss=1)
         self.addLink(s3, s2, port1=3, port2=2, bw=20, delay='2ms', loss=1)
       
